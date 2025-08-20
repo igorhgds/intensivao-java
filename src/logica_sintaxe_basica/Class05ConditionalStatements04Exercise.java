@@ -1,6 +1,6 @@
 package logica_sintaxe_basica;
 
-public class Class5ConditionalStatements04Exercise {
+public class Class05ConditionalStatements04Exercise {
     public static void main(String[] args) {
         double annualSalary = 70000D;
 
