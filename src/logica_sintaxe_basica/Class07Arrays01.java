@@ -24,6 +24,11 @@ public class Class07Arrays01 {
         }
         System.out.println("]");
 
+        //-----------------------------------------------------
+
+        for (int age : ages) {
+            System.out.println(age);
+        }
 
     }
 }
