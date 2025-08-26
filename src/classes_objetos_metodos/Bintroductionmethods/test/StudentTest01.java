@@ -19,7 +19,11 @@ public class StudentTest01 {
         student02.age = 46;
 
         printer.print(student01);
-        System.out.println("-----------------");
+        printer.print(student02);
+
+        System.out.println("##########################");
+
+        printer.print(student01);
         printer.print(student02);
 
 //        System.out.println("Name: " + student01.name);
