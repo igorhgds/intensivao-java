@@ -49,4 +49,20 @@ public class Calculator {
         System.out.println("num1: " + nbr1);
         System.out.println("num2: " + nbr2);
     }
+
+    public void sumArray(int[] numbers){
+        int sum = 0;
+        for(int num : numbers){
+            sum += num;
+        }
+        System.out.println(sum);
+    }
+
+    public void sumVarArgs(double value, int... numbers){
+        int sum = 0;
+        for(int num : numbers){
+            sum += num;
+        }
+        System.out.println(sum);
+    }
 }
