@@ -1,4 +1,4 @@
-package facul.pilhas;
+package facul.pilhas_filas;
 
 public class Pilhas {
     int tamanho;

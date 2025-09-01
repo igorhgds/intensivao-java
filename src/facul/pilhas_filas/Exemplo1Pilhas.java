@@ -1,8 +1,8 @@
-package facul.pilhas;
+package facul.pilhas_filas;
 
 import javax.swing.*;
 
-public class Exemplo1 {
+public class Exemplo1Pilhas {
     public static void main(String[] args) {
         Pilhas intPilha = new Pilhas(5);
         int entrada;
