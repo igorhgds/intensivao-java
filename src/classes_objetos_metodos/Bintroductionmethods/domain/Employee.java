@@ -3,9 +3,10 @@ package classes_objetos_metodos.Bintroductionmethods.domain;
 import java.util.Arrays;
 
 public class Employee {
-    public String name;
-    public int age;
-    public double[] salaries;
+    private String name;
+    private int age;
+    private double[] salaries;
+    private double average;
 
 
     public void print() {
@@ -25,11 +26,43 @@ public class Employee {
     public void calculateAverage() {
         if (salaries == null) return;
 
-        double average = 0;
         for (double salary : salaries) {
             average += salary;
         }
         average /= salaries.length;
-        System.out.printf("Avarege salary: %.2f", average);
+        System.out.printf("Avarege salary: %.2f\n", average);
+    }
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setSalaries(double[] salaries) {
+        this.salaries = salaries;
+    }
+
+//    public void setAverage(double average) {
+//        this.average = average;
+//    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public double[] getSalaries() {
+        return salaries;
+    }
+
+    public double getAverage() {
+        return average;
     }
 }

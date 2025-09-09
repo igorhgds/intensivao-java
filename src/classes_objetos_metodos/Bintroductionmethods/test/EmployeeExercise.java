@@ -6,10 +6,13 @@ public class EmployeeExercise {
     public static void main(String[] args) {
         Employee employee1 = new Employee();
 
-        employee1.name = "Igor";
-        employee1.age = 27;
-        employee1.salaries = new double[] {2500.67, 987.65, 2000};
+        employee1.setName("Igor");
+        employee1.setAge(27);
+        employee1.setSalaries(new double[] {2500.67, 987.65, 2000});
 
         employee1.print();
+
+//        employee1.setAverage(123123);  privado para não deixar alterar
+        System.out.println(String.format("%.2f", employee1.getAverage()));
     }
 }
