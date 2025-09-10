@@ -1,12 +1,26 @@
 package classes_objetos_metodos.Hinheritence.domain;
 
-public class Employee{
+public class Employee {
     protected String name;
     protected String socialSecurityNumber;
     protected Address address;
     protected double salary;
 
+    static {
+        System.out.println("Inside employee static init block");
+        // Static blocks are the first thing to initialized
+    }
+
+    {
+        System.out.println("Inside employee init block 1");
+    }
+
+    {
+        System.out.println("Inside employee init block 2");
+    }
+
     public Employee(String name) {
+        System.out.println("Inside employee constructor");
         this.name = name;
     }
 

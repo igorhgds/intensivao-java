@@ -3,8 +3,22 @@ package classes_objetos_metodos.Hinheritence.domain;
 public class Manager extends Employee {
     private String department;
 
+    static {
+        System.out.println("Inside manager static init block");
+        // Static blocks are the first thing to initialized
+    }
+
+    {
+        System.out.println("Inside manager init block 1");
+    }
+
+    {
+        System.out.println("Inside manager init block 2");
+    }
+
     public Manager(String name) {
         super(name); //super has to be the first
+        System.out.println("Inside manager constructor");
     }
 
 
