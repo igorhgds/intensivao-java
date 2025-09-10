@@ -1,10 +1,19 @@
 package classes_objetos_metodos.Hinheritence.domain;
 
-public class Employee {
+public class Employee{
     protected String name;
     protected String socialSecurityNumber;
     protected Address address;
     protected double salary;
+
+    public Employee(String name) {
+        this.name = name;
+    }
+
+    public Employee(String name, String socialSecurityNumber) {
+        this(name); // call the other constructor
+        this.socialSecurityNumber = socialSecurityNumber;
+    }
 
     public void print() {
         System.out.println(this.name);

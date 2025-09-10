@@ -10,16 +10,14 @@ public class InheritanceTest01 {
         address.setStreet("12th Avenue");
         address.setZipCode("12345");
 
-        Employee employee = new Employee();
-        employee.setName("Igor");
+        Employee employee = new Employee("Igor");
         employee.setSocialSecurityNumber("123123");
         employee.setSalary(3000);
         employee.setAddress(address);
         employee.print();
         System.out.println("----------------");
 
-        Manager manager = new Manager();
-        manager.setName("Aline");
+        Manager manager = new Manager("Aline");
         manager.setSocialSecurityNumber("321123");
         manager.setSalary(9000);
         manager.setAddress(address);

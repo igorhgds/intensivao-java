@@ -3,6 +3,10 @@ package classes_objetos_metodos.Hinheritence.domain;
 public class Manager extends Employee {
     private String department;
 
+    public Manager(String name) {
+        super(name); //super has to be the first
+    }
+
 
     @Override
     public void print(){
