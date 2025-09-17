@@ -1,6 +1,7 @@
 package classes_objetos_metodos.Npolymorphism.service;
 
 import classes_objetos_metodos.Npolymorphism.domain.Product;
+import classes_objetos_metodos.Npolymorphism.domain.Tomato;
 
 public class ProductTaxReportService {
 //    public static void generateComputerTaxReport(Computer computer) {
@@ -25,5 +26,8 @@ public class ProductTaxReportService {
         System.out.println("Product: " + product.getName());
         System.out.println("Price: " + product.getPrice());
         System.out.println("Tax Value: " + taxValue);
+        if(product instanceof Tomato tomato) {
+            System.out.println(tomato.getBestConsumedBefore());
+        }
     }
 }
