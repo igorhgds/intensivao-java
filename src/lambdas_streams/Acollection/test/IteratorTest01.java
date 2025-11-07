@@ -2,13 +2,11 @@ package lambdas_streams.Acollection.test;
 
 import lambdas_streams.Acollection.domain.Manga;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class IteratorTest01 {
     public static void main(String[] args) {
-        List<Manga> mangas = new ArrayList<>(6);
+        List<Manga> mangas = new LinkedList<>();
         mangas.add(new Manga(1L, "Pokemon", 19.99, 0));
         mangas.add(new Manga(5L, "Hellsing ultimate", 9.99, 5));
         mangas.add(new Manga(3L, "berserk", 29.99, 0));
