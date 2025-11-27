@@ -1,4 +1,4 @@
-package lambdas_streams.Bgenerics.test;
+package classes_objetos_metodos.Zgenerics.test;
 
 import lambdas_streams.Acollection.domain.Customer;
 import java.util.ArrayList;

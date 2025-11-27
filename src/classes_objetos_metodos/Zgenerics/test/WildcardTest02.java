@@ -1,4 +1,4 @@
-package lambdas_streams.Bgenerics.test;
+package classes_objetos_metodos.Zgenerics.test;
 
 import java.util.*;
 
