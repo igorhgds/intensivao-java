@@ -1,9 +1,8 @@
-package lambdas_streams.Acollection.test;
+package classes_objetos_metodos.Ycollection.test;
 
-import lambdas_streams.Acollection.domain.Smartphone;
+import classes_objetos_metodos.Ycollection.domain.Smartphone;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class SmartphoneListTest01 {

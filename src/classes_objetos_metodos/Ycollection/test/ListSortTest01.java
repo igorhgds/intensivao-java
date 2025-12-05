@@ -1,4 +1,4 @@
-package lambdas_streams.Acollection.test;
+package classes_objetos_metodos.Ycollection.test;
 
 import java.util.ArrayList;
 import java.util.Collections;

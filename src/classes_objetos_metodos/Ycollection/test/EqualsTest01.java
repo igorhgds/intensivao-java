@@ -1,6 +1,6 @@
-package lambdas_streams.Acollection.test;
+package classes_objetos_metodos.Ycollection.test;
 
-import lambdas_streams.Acollection.domain.Smartphone;
+import classes_objetos_metodos.Ycollection.domain.Smartphone;
 
 public class EqualsTest01 {
     public static void main(String[] args) {

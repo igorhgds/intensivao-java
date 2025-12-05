@@ -1,6 +1,6 @@
 package classes_objetos_metodos.Zgenerics.test;
 
-import lambdas_streams.Acollection.domain.Customer;
+import classes_objetos_metodos.Ycollection.domain.Customer;
 import java.util.ArrayList;
 import java.util.List;
 

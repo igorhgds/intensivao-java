@@ -1,7 +1,7 @@
-package lambdas_streams.Acollection.test;
+package classes_objetos_metodos.Ycollection.test;
 
-import lambdas_streams.Acollection.domain.Manga;
-import lambdas_streams.Acollection.domain.Smartphone;
+import classes_objetos_metodos.Ycollection.domain.Manga;
+import classes_objetos_metodos.Ycollection.domain.Smartphone;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package lambdas_streams.Acollection.domain;
+package classes_objetos_metodos.Ycollection.domain;
 
 import java.util.Objects;
 import java.util.concurrent.ThreadLocalRandom;

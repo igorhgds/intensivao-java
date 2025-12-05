@@ -1,6 +1,6 @@
-package lambdas_streams.Acollection.test;
+package classes_objetos_metodos.Ycollection.test;
 
-import lambdas_streams.Acollection.domain.Manga;
+import classes_objetos_metodos.Ycollection.domain.Manga;
 
 import java.util.ArrayList;
 import java.util.Collections;

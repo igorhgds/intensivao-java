@@ -1,4 +1,4 @@
-package lambdas_streams.Acollection.domain;
+package classes_objetos_metodos.Ycollection.domain;
 
 public class Smartphone {
     private String serialNumber;
