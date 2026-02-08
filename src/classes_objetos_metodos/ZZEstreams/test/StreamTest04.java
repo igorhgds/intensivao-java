@@ -2,7 +2,7 @@ package classes_objetos_metodos.ZZEstreams.test;
 
 import java.util.*;
 
-public class StreamTeste04 {
+public class StreamTest04 {
     public static void main(String[] args) {
         List<List<String>> devdojo = new ArrayList<>();
         
