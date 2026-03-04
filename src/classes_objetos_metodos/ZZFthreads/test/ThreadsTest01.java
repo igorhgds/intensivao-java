@@ -34,7 +34,13 @@ class ThreadExampleRunnable implements Runnable{
             if (i % 100 == 0) {
                 System.out.println();
             }
+            try {
+                Thread.sleep(2000); // 2s
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
+        System.out.println("########################## " + Thread.currentThread().getName());
     }
 }
 
@@ -46,15 +52,17 @@ public class ThreadsTest01 {
 //        ThreadExample t3 = new ThreadExample('C');  exactly the same result
 //        ThreadExample t4 = new ThreadExample('D');
 
-        Thread t1 = new Thread(new ThreadExampleRunnable('A'));
-        Thread t2 = new Thread(new ThreadExampleRunnable('B'));
-        Thread t3 = new Thread(new ThreadExampleRunnable('C'));
-        Thread t4 = new Thread(new ThreadExampleRunnable('D'));
-        t1.start();
-        t2.start();
+        Thread t1 = new Thread(new ThreadExampleRunnable('A'), "T1A");
+        Thread t2 = new Thread(new ThreadExampleRunnable('B'), "T2B");
+        Thread t3 = new Thread(new ThreadExampleRunnable('C'), "T3C");
+        Thread t4 = new Thread(new ThreadExampleRunnable('D'), "T4D");
+        t4.setPriority(5); //middle ou .NORM_PRIORITY
+        t2.setPriority(Thread.MIN_PRIORITY);
+        t1.start(); // .run()   -> start one by one
+        t2.start(); // .start() -> aleatory order execute
         t3.start();
         t4.start();
-        // .run()   -> start one by one
-        // .start() -> aleatory order execute
+
+
     }
 }
