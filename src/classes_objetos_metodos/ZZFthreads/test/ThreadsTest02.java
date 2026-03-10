@@ -16,7 +16,6 @@ class ThreadExampleRunnable2 implements Runnable {
                 System.out.println();
             }
         }
-        //Thread.yield();
     }
 }
 

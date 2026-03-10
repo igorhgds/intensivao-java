@@ -35,7 +35,7 @@ class ThreadExampleRunnable implements Runnable{
                 System.out.println();
             }
             try {
-                Thread.sleep(2000); // 2s
+                Thread.sleep(1000); // 2s
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
